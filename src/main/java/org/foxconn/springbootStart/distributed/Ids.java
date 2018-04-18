@@ -5,4 +5,7 @@ public class Ids {
 	public static String getId(){
 		return String.valueOf(id++);
 	}
+	public  String getNextId(){
+		return String.valueOf(id++);
+	}
 }
