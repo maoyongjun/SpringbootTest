@@ -1,4 +1,4 @@
-package org.foxconn.springbootStart;
+package org.foxconn.springbootStart.util;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
