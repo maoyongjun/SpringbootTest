@@ -3,7 +3,7 @@ package org.foxconn.springbootStart.service;
 import javax.annotation.Resource;
 
 import org.apache.log4j.Logger;
-import org.foxconn.springbootStart.DataSourceAspect;
+import org.foxconn.springbootStart.aop.DataSourceAspect;
 import org.foxconn.springbootStart.dao.UserDao;
 import org.junit.Test;
 import org.springframework.stereotype.Service;
