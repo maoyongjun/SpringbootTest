@@ -10,26 +10,30 @@ public class MyTokenizer extends Tokenizer {
 	MyAttribute attribute1 = addAttribute(MyAttribute.class);
 	private String msg ;
 	private int currentIndex;
+	private StringBuilder sb;
 	public MyTokenizer() {
 		
 	}
 
 	@Override
 	public boolean incrementToken() throws IOException {
-		if(msg!=null){
-			input.reset();
-			BufferedReader br = new BufferedReader(input);
-			msg = br.readLine();
-		}
 		clearAttributes();
-		attribute1.setText(String.valueOf(RandomUtils.nextInt()));
-//		if(msg.charAt(currentIndex)){}
-//		 
-//		if(msg.charAt(currentIndex)==(int)''){
-//			
-//		}
+		int i=-1;
+		int index=-1;
+		sb=new StringBuilder("");
+		while((i=input.read())!=-1){
+			
+			index++;
+			if(Character.isWhitespace(i)){
+				attribute1.setText(String.valueOf(sb.toString()));
+				return true;
+			}else{
+				sb.append((char)i);
+			}
+		}
+		return false;
 		
-		return true;
+		
 
 	}
 
