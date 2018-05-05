@@ -5,12 +5,16 @@ import java.io.IOException;
 
 import org.apache.commons.lang.math.RandomUtils;
 import org.apache.lucene.analysis.Tokenizer;
+import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 
 public class MyTokenizer extends Tokenizer {
 	MyAttribute attribute1 = addAttribute(MyAttribute.class);
 	private String msg ;
 	private int currentIndex;
 	private StringBuilder sb;
+	
+	private final CharTermAttribute termAtt=addAttribute(CharTermAttribute.class);//
+	
 	public MyTokenizer() {
 		
 	}
@@ -26,6 +30,7 @@ public class MyTokenizer extends Tokenizer {
 			index++;
 			if(Character.isWhitespace(i)){
 				attribute1.setText(String.valueOf(sb.toString()));
+				termAtt.append(String.valueOf(sb.toString()));
 				return true;
 			}else{
 				sb.append((char)i);

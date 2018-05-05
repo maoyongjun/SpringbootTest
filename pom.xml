@@ -112,7 +112,31 @@
 			<artifactId>lucene-core</artifactId>
 			<version>7.3.0</version>
 		</dependency>
+		
+		<!-- ikanalyzer 中文分词器  -->
+		<dependency>
+		    <groupId>com.janeluo</groupId>
+		    <artifactId>ikanalyzer</artifactId>
+		    <version>2012_u6</version>
+		    
+		    <exclusions>
+		    	<exclusion>
+		    		<groupId>org.apache.lucene</groupId>
+		    		<artifactId>lucene-core</artifactId>
+		    	</exclusion>
+		    	<exclusion>
+		    		<groupId>org.apache.lucene</groupId>
+		    		<artifactId>lucene-queryparser</artifactId>
+		    	</exclusion>
+		    	<exclusion>
+		    		<groupId>org.apache.lucene</groupId>
+		    		<artifactId>lucene-analyzers-common</artifactId>
+		    	</exclusion>
+		    </exclusions>
+		</dependency>
 	</dependencies>
+	
+	
 	<build>
 		<plugins>
 			<plugin>
