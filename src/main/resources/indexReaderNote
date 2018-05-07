@@ -1,0 +1,12 @@
+索引的读取：
+	indexReader 
+	indexSeacher
+	TopDosc
+	
+	
+	叶查询
+	组合查询
+	布尔查询
+	临近词查询（可移动指针）
+	模糊查询
+

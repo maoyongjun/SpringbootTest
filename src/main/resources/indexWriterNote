@@ -1,0 +1,9 @@
+
+IndexWriterConfig config:构造器传入analyzer(分词器)，setOpenMode()
+Directory dir:索引存储路径 FSDirectory.open(new File(""))
+IndexWriter(dir,config) iw
+Document:add(); doc
+FieldType:是否分词，是否存储...
+Field:TextField,...
+doc.add(field)
+iw.add(doc)

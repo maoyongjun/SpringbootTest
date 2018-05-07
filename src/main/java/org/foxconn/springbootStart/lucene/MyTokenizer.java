@@ -36,6 +36,11 @@ public class MyTokenizer extends Tokenizer {
 				sb.append((char)i);
 			}
 		}
+		if(sb.length()>0){
+			attribute1.setText(String.valueOf(sb.toString()));
+			termAtt.append(String.valueOf(sb.toString()));
+			return true;
+		}
 		return false;
 		
 		

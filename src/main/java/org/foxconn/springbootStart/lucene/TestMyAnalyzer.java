@@ -9,7 +9,8 @@ import org.apache.lucene.analysis.TokenStream;
 public class TestMyAnalyzer {
 
 	public static void main(String[] args) throws IOException {
-		String msg = "aaa like bbb,ccc ddd";
+//		String msg = "aaa like bbb,ccc ddd";
+		String msg = "aaa";
 		try (Analyzer an = new MyAnalyzer(); 
 				TokenStream token = an.tokenStream("aa", msg);) {
 			token.reset();// 赋值或者重置

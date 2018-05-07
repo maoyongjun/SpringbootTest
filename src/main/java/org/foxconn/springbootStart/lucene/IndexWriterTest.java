@@ -53,8 +53,8 @@ public class IndexWriterTest {
 		Document readDoc = reader.document(0);
 		System.out.println(readDoc);
 		IndexableField filed1 = readDoc.getField("name");
-//		System.out.println(filed1.stringValue());
-		System.out.println(filed1.binaryValue());
+		System.out.println(filed1.stringValue());
+//		System.out.println(filed1.binaryValue());
 		Long totalTeams = reader.getSumTotalTermFreq("name");
 		System.out.println(totalTeams);
 //		TokenStream ts =null; 
