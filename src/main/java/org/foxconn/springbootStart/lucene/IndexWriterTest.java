@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Path;
 
-import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.Field.Store;
@@ -24,7 +23,11 @@ import org.apache.lucene.store.FSDirectory;
 
 public class IndexWriterTest {
 	
-	public static void main(String[] args) throws IOException, URISyntaxException{
+//	public static void main(String[] args) throws IOException, URISyntaxException{
+//
+//	}
+	
+	private void test() throws IOException{
 //		URI uri = new URI("file:///d:/index");
 //		Path path =Paths.get(uri);
 		Path path =new File("d:/index").toPath();

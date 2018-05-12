@@ -17,10 +17,10 @@ import org.apache.log4j.Logger;
 
 public class ScheduleUtil {
 	Logger logger = Logger.getLogger(ScheduleUtil.class);
-	public static void main(String[] args) {
-		ScheduleUtil test = new ScheduleUtil();
-		test.test();
-	}
+//	public static void main(String[] args) {
+//		ScheduleUtil test = new ScheduleUtil();
+//		test.test();
+//	}
 
 	public void test() {
 		ScheduledExecutorService taskService = Executors.newScheduledThreadPool(10);

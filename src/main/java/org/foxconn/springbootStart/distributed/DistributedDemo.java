@@ -20,12 +20,12 @@ public class DistributedDemo {
 	ExecutorService service = Executors.newFixedThreadPool(poolSize);
 	private Jedis jedis = new Jedis("127.0.0.1",6379);
 
-	public static void main(String[] args) {
-		DistributedDemo demo = new DistributedDemo();
-		demo.run();
-	}
-
-	@Test
+//	public static void main(String[] args) {
+//		DistributedDemo demo = new DistributedDemo();
+//		demo.run();
+//	}
+//
+//	@Test
 	public void run() {
 		final Lock lock = new MyLock();
 		final Lock lock1 = new ReentrantLock();

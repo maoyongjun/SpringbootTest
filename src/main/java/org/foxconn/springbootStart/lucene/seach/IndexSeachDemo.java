@@ -23,10 +23,10 @@ import org.foxconn.springbootStart.lucene.MyAnalyzer;
 
 public class IndexSeachDemo {
 	
-	public static void main(String[] args) throws IOException, ParseException {
-		IndexSeachDemo demo = new IndexSeachDemo();
-		demo.test();
-	}
+//	public static void main(String[] args) throws IOException, ParseException {
+//		IndexSeachDemo demo = new IndexSeachDemo();
+//		demo.test();
+//	}
 	private void test() throws IOException, ParseException{
 		Directory dir = FSDirectory.open(new File("d:/index").toPath());
 		IndexReader ir = StandardDirectoryReader.open(dir);

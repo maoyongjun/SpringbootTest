@@ -4,7 +4,7 @@
 	<groupId>org.foxconn.springbootTest</groupId>
 	<artifactId>SpringbootTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<!-- 定义公共资源版本 -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -18,7 +18,7 @@
 		<!-- <spring.version>4.2.5.RELEASE</spring.version> -->
 		<mybatis.version>3.2.5</mybatis.version>
 		<mybatis-spring.version>1.2.2</mybatis-spring.version>
-		<!-- <jdk.version>1.8</jdk.version> -->
+		<jdk.version>1.8</jdk.version>
 	</properties>
 
 	<dependencies>
@@ -63,7 +63,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+<!-- 			<scope>test</scope> -->
 		</dependency>
 		<dependency>
 			<groupId>commons-dbcp</groupId>

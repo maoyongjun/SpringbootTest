@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 public class AspectFunction {
 	Logger logger =Logger.getLogger(AspectFunction.class);
 	
-	@Pointcut("@annotation(org.foxconn.springbootStart.DataSourceAspect)")
+	@Pointcut("@annotation(org.foxconn.springbootStart.aop.DataSourceAspect)")
 //	@Pointcut("execution(* org.foxconn.springbootStart..*(..))")''
 	public void aspect(){
 	

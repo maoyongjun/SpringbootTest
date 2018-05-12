@@ -28,11 +28,11 @@ import org.junit.Test;
 
 public class LocalDiskSeacherUtil {
 	private MyAnalyzer analyzer = new MyAnalyzer();
-	public static void main(String[] args) throws IOException {
-		LocalDiskSeacherUtil util = new LocalDiskSeacherUtil();
-		String fileDir ="d:/";
-		util.addDocToIndex(fileDir,"d:/index");
-	}
+//	public static void main(String[] args) throws IOException {
+//		LocalDiskSeacherUtil util = new LocalDiskSeacherUtil();
+//		String fileDir ="d:/";
+//		util.addDocToIndex(fileDir,"d:/index");
+//	}
 	
 	
 	/**
