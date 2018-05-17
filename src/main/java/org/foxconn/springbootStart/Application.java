@@ -3,6 +3,7 @@ package org.foxconn.springbootStart;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 
+import org.apache.solr.client.solrj.SolrClient;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
