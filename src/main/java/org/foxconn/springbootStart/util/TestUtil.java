@@ -4,7 +4,7 @@ import org.foxconn.springbootStart.Application;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 public class TestUtil {
-	public static void main(String[] args) {
+//	public static void main(String[] args) {
 //		FeachTaskUtil task = new FeachTaskUtil();
 //		
 //		--访问控制
@@ -30,5 +30,5 @@ public class TestUtil {
 //		instanceof 
 //		(Application1)b.
 //		
-	}
+//	}
 }

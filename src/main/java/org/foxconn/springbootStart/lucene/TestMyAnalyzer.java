@@ -8,7 +8,10 @@ import org.apache.lucene.analysis.TokenStream;
 
 public class TestMyAnalyzer {
 
-	public static void main(String[] args) throws IOException {
+//	public static void main(String[] args) throws IOException {
+//
+//	}
+	private void test(){
 //		String msg = "aaa like bbb,ccc ddd";
 		String msg = "aaa";
 		try (Analyzer an = new MyAnalyzer(); 
@@ -22,6 +25,5 @@ public class TestMyAnalyzer {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
 }
