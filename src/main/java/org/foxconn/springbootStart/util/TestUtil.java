@@ -1,7 +1,7 @@
 package org.foxconn.springbootStart.util;
 
-import org.foxconn.springbootStart.Application;
-import org.springframework.boot.web.support.SpringBootServletInitializer;
+import java.io.File;
+import java.io.IOException;
 
 public class TestUtil {
 //	public static void main(String[] args) {
@@ -31,4 +31,9 @@ public class TestUtil {
 //		(Application1)b.
 //		
 //	}
+	public static void main(String[] args) throws IOException {
+		File file = new File("..");
+		System.out.println(file.getAbsolutePath());
+		System.out.println(file.getCanonicalPath());
+	}
 }
